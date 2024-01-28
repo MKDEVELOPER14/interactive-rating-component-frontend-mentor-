@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root{
+    --font: 'Overpass', sans-serif;
+    --orange:hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+html,body{
+    min-height: 100vh;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+}
+.mainCard{
+    display: block;
+    width: 400px;
+    padding: 1.5rem;
+    background-color: var(--DarkBlue);
+    border-radius: 1rem;
+}
+.descDiv{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.icon{
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:   hsl(216, 8%, 24%);
+    margin-bottom: 1rem;
+}
+.title{
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom:0.5rem ;
+}
+.desc{
+    color: var(--LightGrey);
+    font-weight: 400;
+}
+.ratingDiv{
+    width: 100%;
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 1.5rem;
+
+}
+.Rbtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  hsl(216, 8%, 24%);
+    border: none;
+    color: var(--LightGrey);
+    cursor:pointer;
+    font-weight: 700;
+}
+.Rbtn:hover{
+    color: var(--White);
+    background-color: var(--orange);
+}
+.submitDiv{
+    width: 100%;
+}
+.submitBtn{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    color: var(--White);
+    font-weight: 700;
+    background-color: var(--orange);
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    border: none;
+}
+.submitBtn:hover{
+    background-color: var(--White);
+    color: var(--orange);
+}
+.bg{
+    background-color: var(--MediumGrey);
+    color: var(--White);
+
+}
+.thankyouDiv{
+    width: 430px;
+    display: none;
+}
+.ThankYouCard{
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: var(--DarkBlue);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.thankImg{
+    margin-bottom: 1.5rem;
+}
+.selected{
+    font-size: 1.1rem;
+    padding: 7px 15px;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--orange);
+    background-color: hsl(216, 8%, 24%);
+    margin-bottom: 1.5rem;
+}
+.thankYouTitle{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+.ThankYouDesc{
+    color: var(--LightGrey);
+    font-weight: 400;
+    text-align: center;
+}
+@media screen and (max-width:430px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--VeryDarkBlue);
+    }
+    .mainCard{
+        display: block;
+        width: 90%;
+        padding: 1.5rem;
+        background-color: var(--DarkBlue);
+        border-radius: 1rem;
+    }
+    .descDiv{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .title{
+        font-size: 1.7rem;
+        color: var(--White);
+        font-weight: 700;
+        margin-bottom:0.5rem ;
+    }
+    .desc{
+        color: var(--LightGrey);
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 0.9rem;
+    }
+    .ratingDiv{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.7rem;
+    }
+    .Rbtn{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        background-color:  hsl(216, 8%, 24%);
+        border: none;
+        color: var(--LightGrey);
+        cursor:pointer;
+        font-weight: 700;
+    }
+    .thankyouDiv{
+        width: 90%;
+        display: none;
+    }
+    .ThankYouCard{
+        width: 100%;
+        padding: 3rem 2rem;
+        background-color: var(--DarkBlue);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    .thankImg{
+        margin-bottom: 1.5rem;
+    }
+    .selected{
+        font-size: 1.1rem;
+        padding: 7px 15px;
+        text-align: center;
+        border-radius: 1rem;
+        color: var(--orange);
+        background-color: hsl(216, 8%, 24%);
+        margin-bottom: 1.5rem;
+    }
+    .thankYouTitle{
+        color: var(--White);
+        margin-bottom: 1rem;
+    }
+    .ThankYouDesc{
+        color: var(--LightGrey);
+        font-weight: 400;
+        text-align: center;
+    }
+}
